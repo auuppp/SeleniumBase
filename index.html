@@ -21,7 +21,7 @@
     <section class="main-content">
       <p><img src="http://cdn2.hubspot.net/hubfs/100006/images/SB_Logo19.png" alt="" title="SeleniumBase"></p>
 
-<p><a href="https://pypi.python.org/pypi/seleniumbase"><img src="https://img.shields.io/pypi/v/seleniumbase.svg" alt="pypi"></a> <a href="https://travis-ci.org/seleniumbase/SeleniumBase"><img src="https://travis-ci.org/seleniumbase/SeleniumBase.svg?branch=master" alt="Build Status"></a> <a href="https://github.com/seleniumbase/SeleniumBase/stargazers"><img src="https://img.shields.io/github/stars/seleniumbase/seleniumbase.svg" alt="GitHub stars" title="GitHub stars"></a> <a href="https://github.com/seleniumbase/SeleniumBase/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-22BBCC.svg" alt="MIT License" title="MIT License"></a> <a href="https://gitter.im/seleniumbase/SeleniumBase?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/seleniumbase/SeleniumBase.svg" alt="Join the chat at https://gitter.im/seleniumbase/SeleniumBase"></a> <a href="https://docs.python.org/2/"><img src="https://img.shields.io/badge/python-2.7-blue.svg" alt="Python version" title="Python version"></a></p>
+<p><a href="https://pypi.python.org/pypi/seleniumbase"><img src="https://img.shields.io/pypi/v/seleniumbase.svg" alt="pypi"></a> <a href="https://travis-ci.org/seleniumbase/SeleniumBase"><img src="https://travis-ci.org/seleniumbase/SeleniumBase.svg?branch=master" alt="Build Status"></a> <a href="https://github.com/seleniumbase/SeleniumBase/stargazers"><img src="https://img.shields.io/github/stars/seleniumbase/seleniumbase.svg" alt="GitHub stars" title="GitHub stars"></a> <a href="https://docs.python.org/2/"><img src="https://img.shields.io/badge/python-2.7-EEAA22.svg" alt="Python version" title="Python version"></a> <a href="https://github.com/seleniumbase/SeleniumBase/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-22BBCC.svg" alt="MIT License" title="MIT License"></a> <a href="https://gitter.im/seleniumbase/SeleniumBase?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/seleniumbase/SeleniumBase.svg" alt="Join the chat at https://gitter.im/seleniumbase/SeleniumBase"></a></p>
 
 <p><strong>Automation Platform for Testing and Business</strong></p>
 
@@ -326,6 +326,12 @@ If you want to type in special keys, that's easy too. Here's an example:</p>
 <span class="pl-c"># But you're better off using the following statement, which does the same thing:</span>
 
 <span class="pl-v">self</span>.click(<span class="pl-s"><span class="pl-pds">"</span>a.my_class<span class="pl-pds">"</span></span>)  <span class="pl-c"># DO IT THIS WAY!</span></pre></div>
+
+<p>Using dots to signify class names is a simplified way of using <code>*=</code> within a CSS selector. That simplified version looks like this:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-v">self</span>.click(<span class="pl-s"><span class="pl-pds">'</span>a[class*="my_class"]<span class="pl-pds">'</span></span>)</pre></div>
+
+<p><strong>ProTip™:</strong> You can use <code>*=</code> to search for any partial value in a CSS selector.</p>
 
 <h4>
 <a id="asserting-visibility-of-text-inside-an-element-on-a-page-within-some-number-of-seconds" class="anchor" href="#asserting-visibility-of-text-inside-an-element-on-a-page-within-some-number-of-seconds" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Asserting visibility of text inside an element on a page within some number of seconds:</h4>
